@@ -1,0 +1,24 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Test book"
+  author: "Daniela Feistauer"
+  date: "9/1/2025"
+  chapters:
+  # Die Anzahl der Leerzeichen (Indentation ist wichtig)
+    - index.qmd # muss immer auf der ersten Stelle stehen
+    - intro.qmd # nur eine Ü1 pro Kapitel, wenn man die Buchvorlage nimmt
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
